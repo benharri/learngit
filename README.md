@@ -4,24 +4,19 @@ this is a getting started guide to [`git`](https://git-scm.com).
 
 # table of contents
 
-#### sections
-* [getting set up](#getting-set-up)
-* [making your first repo](#making-your-first-repo)
-* [syncing your changes with others](#syncing-your-changes-with-others)
+
 #### additional resources
 * [glossary](glossary.md)
 * [common commands](common_commands.md)
 * [branching strategies](branching_strategies.md)
 * [troubleshooting](troubleshooting.md)
 * [ssh setup](ssh_setup.md)
-#### external resources
-* [progit book](https://git-scm.com/book/en/v2)
-* [github interactive tutorial](https://try.github.io)
-* [learn enough git to be dangerous](https://www.learnenough.com/git-tutorial)
-* [atlassian git tutorials](https://www.atlassian.com/git/tutorials)
-* [github documentation](https://help.github.com)
-* [sourcetree app](https://sourcetreeapp.com) (a visual GUI tool for working with git repos: great for people who don't feel quite at home on the command line)
-* [github desktop](https://desktop.github.com) (an alternate GUI by github)
+* [external resources](#external-resources)
+
+#### sections
+* [getting set up](#getting-set-up)
+* [making your first repo](#making-your-first-repo)
+* [syncing your changes with others](#syncing-your-changes-with-others)
 
 
 # here we go!
@@ -84,4 +79,22 @@ let's take a look at syncing your repo with github (or any other git hosting loc
 to get changes that have other people have pushed the the repo while you were away, use the [`fetch`](common_commands.md#fetch) and [`merge`](common_commands.md#merge) commands. since this is such a common operation, [`pull`](common_commands.md#pull) was created as a shortcut for `git fetch` immediately followed by `git merge`.
 
 if you haven't made any changes since the last time you `pull`ed the latest changes, it's usually a good idea to [`rebase`](common_commands.md#pull). this will replay all of the work that has been done on top of the current repo state, avoiding extra merge commits in the repo history. just use `git pull --rebase`.
+
+
+
+---
+
+#### external resources
+so you want to learn more?
+here are some more resources!
+
+* [progit book](https://git-scm.com/book/en/v2)
+* [github interactive tutorial](https://try.github.io)
+* [learn enough git to be dangerous](https://www.learnenough.com/git-tutorial)
+* [atlassian git tutorials](https://www.atlassian.com/git/tutorials)
+* [github documentation](https://help.github.com)
+* [sourcetree app](https://sourcetreeapp.com) (a visual GUI tool for working with git repos: great for people who don't feel quite at home on the command line)
+* [github desktop](https://desktop.github.com) (an alternate GUI by github)
+
+
 

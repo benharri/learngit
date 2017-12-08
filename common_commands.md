@@ -9,6 +9,7 @@ these are commands and options that i use frequently. see the linked documentati
 * [branching strategies](branching_strategies.md)
 * [troubleshooting](troubleshooting.md)
 * [ssh setup](ssh_setup.md)
+* [external resources](README.md#external-resources)
 
 
 ---
