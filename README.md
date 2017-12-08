@@ -83,7 +83,7 @@ if you haven't made any changes since the last time you `pull`ed the latest chan
 
 ---
 
-#### external resources
+## external resources
 so you want to learn more?
 here are some more resources!
 
