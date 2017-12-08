@@ -3,6 +3,16 @@
 these are commands and options that i use frequently. see the linked documentation for more options and information.
 
 
+## table of contents
+* [home](README.md)
+* [glossary](glossary.md)
+* [branching strategies](branching_strategies.md)
+* [troubleshooting](troubleshooting.md)
+* [ssh setup](ssh_setup.md)
+
+
+---
+
 ## [add](https://git-scm.com/docs/git-add)
 > `git add [--all] [<files>]`
 

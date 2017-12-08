@@ -1,6 +1,15 @@
 # git glossary
 > [source (git-scm.com)](https://git-scm.com/book/en/v2)
 
+## table of contents
+* [home](README.md)
+* [common commands](common_commands.md)
+* [branching strategies](branching_strategies.md)
+* [troubleshooting](troubleshooting.md)
+* [ssh setup](ssh_setup.md)
+
+---
+
 ## [branch](https://git-scm.com/book/en/v1/Git-Branching-What-a-Branch-Is)
 To really understand the way Git does branching, we need to take a step back and examine how Git stores its data. As you may remember from Chapter 1, Git doesn’t store data as a series of changesets or deltas, but instead as a series of snapshots.
 
@@ -85,9 +94,18 @@ The ref namespace is hierarchical. Different subhierarchies are used for differe
 There are a few special-purpose refs that do not begin with refs/. The most notable example is HEAD.
 
 
+## [remote](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes)
+Remote repositories are versions of your project that are hosted on the Internet or network somewhere. You can have several of them, each of which generally is either read-only or read/write for you. Collaborating with others involves managing these remote repositories and pushing and pulling data to and from them when you need to share work.
+
+
 ## [repository](https://git-scm.com/docs/gitglossary#def_repository)
 A collection of refs together with an object database containing all objects which are reachable from the refs, possibly accompanied by meta data from one or more porcelains. A repository can share an object database with other repositories via alternates mechanism.
 
+
+## [staging area](https://softwareengineering.stackexchange.com/questions/119782/what-does-stage-mean-in-git)
+source: [stack exchange](https://softwareengineering.stackexchange.com/questions/119782/what-does-stage-mean-in-git)
+
+To stage a file is simply to prepare it finely for a commit. Git, with its index allows you to commit only certain parts of the changes you've done since the last commit. Say you're working on two features - one is finished, and one still needs some work done. You'd like to make a commit and go home (5 o'clock, finally!) but wouldn't like to commit the parts of the second feature, which is not done yet. You stage the parts you know belong to the first feature, and commit. Now your commit is your project with the first feature done, while the second is still in work-in-progress in your working directory.
 
 ## [working tree](https://git-scm.com/docs/gitglossary#gitglossary-aiddefworkingtreeaworkingtree)
 The tree of actual checked out files. The working tree normally contains the contents of the HEAD commit’s tree, plus any local changes that you have made but not yet committed.
