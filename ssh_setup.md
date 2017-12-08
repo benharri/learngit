@@ -1,5 +1,16 @@
 # ssh key setup for git
 
+## table of contents
+* [home](README.md)
+* [glossary](glossary.md)
+* [common commands](common_commands.md)
+* [branching strategies](branching_strategies.md)
+* [troubleshooting](troubleshooting.md)
+* **[ssh setup](ssh_setup.md)**
+* [external resources](README.md#external-resources)
+
+
+
 using SSH authentication for communicating with remote repos is generally easier than using https. sometimes it's required for certain repos or by rules set at the hosting level.
 
 here's how to get set up with SSH keys

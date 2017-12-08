@@ -6,12 +6,14 @@ this is a getting started guide to [`git`](https://git-scm.com).
 
 
 #### additional resources
+* **[home](README.md)**
 * [glossary](glossary.md)
 * [common commands](common_commands.md)
 * [branching strategies](branching_strategies.md)
 * [troubleshooting](troubleshooting.md)
 * [ssh setup](ssh_setup.md)
 * [external resources](#external-resources)
+
 
 #### sections
 * [getting set up](#getting-set-up)
