@@ -10,6 +10,7 @@ the following commands are to be used in the form of `git <command>`
 ## clone
 ## diff
 ## fetch
+## init
 ## merge
 ## pull
 ## push

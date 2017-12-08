@@ -17,6 +17,9 @@ this is a getting started guide to [`git`](https://git-scm.com).
 * [github interactive tutorial](https://try.github.io)
 * [learn enough git to be dangerous](https://www.learnenough.com/git-tutorial)
 * [atlassian git tutorials](https://www.atlassian.com/git/tutorials)
+* [github documentation](https://help.github.com)
+* [sourcetree app](https://sourcetreeapp.com) (a visual GUI tool for working with git repos: great for people who don't feel quite at home on the command line)
+* [github desktop](https://desktop.github.com) (an alternate GUI by github)
 
 # here we go!
 
