@@ -4,16 +4,16 @@ these are commands and options that i use frequently. see the linked documentati
 
 
 ## table of contents
-* [home](README.md)
-    * [getting set up](#getting-set-up)
-    * [making your first repo](#making-your-first-repo)
-    * [syncing your changes with others](#syncing-your-changes-with-others)
-* [glossary](glossary.md)
-* **[common commands](common_commands.md)**
-* [branching strategies](branching_strategies.md)
-* [troubleshooting](troubleshooting.md)
-* [ssh setup](ssh_setup.md)
-* [external resources](README.md#external-resources)
+* [home](README)
+    * [getting set up](README#getting-set-up)
+    * [making your first repo](README#making-your-first-repo)
+    * [syncing your changes with others](README#syncing-your-changes-with-others)
+* [glossary](glossary)
+* **[common commands](common_commands)**
+* [branching strategies](branching_strategies)
+* [troubleshooting](troubleshooting)
+* [ssh setup](ssh_setup)
+* [external resources](README#external-resources)
 
 
 

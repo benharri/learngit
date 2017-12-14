@@ -2,16 +2,16 @@
 > [source (git-scm.com)](https://git-scm.com/book/en/v2)
 
 ## table of contents
-* [home](README.md)
-    * [getting set up](#getting-set-up)
-    * [making your first repo](#making-your-first-repo)
-    * [syncing your changes with others](#syncing-your-changes-with-others)
-* **[glossary](glossary.md)**
-* [common commands](common_commands.md)
-* [branching strategies](branching_strategies.md)
-* [troubleshooting](troubleshooting.md)
-* [ssh setup](ssh_setup.md)
-* [external resources](README.md#external-resources)
+* [home](README)
+    * [getting set up](README#getting-set-up)
+    * [making your first repo](README#making-your-first-repo)
+    * [syncing your changes with others](README#syncing-your-changes-with-others)
+* **[glossary](glossary)**
+* [common commands](common_commands)
+* [branching strategies](branching_strategies)
+* [troubleshooting](troubleshooting)
+* [ssh setup](ssh_setup)
+* [external resources](README#external-resources)
 
 
 ---
@@ -19,12 +19,12 @@
 ## [branch](https://git-scm.com/book/en/v1/Git-Branching-What-a-Branch-Is)
 To really understand the way Git does branching, we need to take a step back and examine how Git stores its data. As you may remember from Chapter 1, Git doesn’t store data as a series of changesets or deltas, but instead as a series of snapshots.
 
-Running [`git commit`](common_commands.md#commit) checksums all project directories and stores them as tree objects in the Git repository. Git then creates a commit object that has the metadata and a pointer to the root project tree object so it can re-create that snapshot when needed.
+Running [`git commit`](common_commands#commit) checksums all project directories and stores them as tree objects in the Git repository. Git then creates a commit object that has the metadata and a pointer to the root project tree object so it can re-create that snapshot when needed.
 
 A branch in Git is simply a lightweight movable pointer to one of these commits. The default branch name in Git is master. As you initially make commits, you’re given a master branch that points to the last commit you made. Every time you commit, it moves forward automatically.
 
 
-## [checkout](common_commands.md#checkout)
+## [checkout](common_commands#checkout)
 Checking out is the operation of switching the working tree to the state at a given snapshot, which is usually the HEAD of another branch.
 
 
@@ -45,7 +45,7 @@ The "right" definition is, I think, that your tree is "clean" if there are no ch
 ## distributed version control system
 A Distributed Version Control System (DVCS) differs from traditional VCS systems in that every user has a copy of the entire repo, including the history and all branches.
 
-A connection to a central server is not required to work on a project. Changes and conflicts can be resolved later when the diverging histories are [`merge`](common_commands.md#merge)d later on.
+A connection to a central server is not required to work on a project. Changes and conflicts can be resolved later when the diverging histories are [`merge`](common_commands#merge)d later on.
 
 
 ## [gitignore](https://git-scm.com/docs/gitignore)
@@ -69,7 +69,7 @@ Whenever you create a Git repository, a branch named "master" is created, and be
 
 
 ## origin
-Origin is the name given to the default remote. It is set automatically when using [`git clone`](common_commands.md#clone), and recommended when setting up the remote for an existing repo.
+Origin is the name given to the default remote. It is set automatically when using [`git clone`](common_commands#clone), and recommended when setting up the remote for an existing repo.
 
 
 ## [pathspec](https://git-scm.com/docs/gitglossary#gitglossary-aiddefpathspecapathspec)
