@@ -2,17 +2,23 @@
 
 This is a compilation of notes, tips and a getting started guide to [`git`](https://git-scm.com). Please feel free to open a pull request or fork it for yourself!
 
-# table of contents
-* **[home](README.md)**
-    * [getting set up](README.md#getting-set-up)
-    * [making your first repo](README.md#making-your-first-repo)
-    * [syncing your changes with others](README.md#syncing-your-changes-with-others)
-* [glossary](glossary.md)
-* [common commands](common_commands.md)
-* [branching strategies](branching_strategies.md)
-* [troubleshooting](troubleshooting.md)
-* [ssh setup](ssh_setup.md)
-* [external resources](README.md#external-resources.md)
+## table of contents
+**[home](README.md)** &bull;
+[glossary](glossary.md) &bull;
+[common commands](common_commands.md) &bull;
+[branching strategies](branching_strategies.md) &bull;
+[troubleshooting](troubleshooting.md) &bull;
+[ssh setup](ssh_setup.md) &bull;
+[external resources](README.md#external-resources)
+
+---
+
+## on this page
+* [getting set up](README.md#getting-set-up)
+* [making your first repo](README.md#making-your-first-repo)
+* [syncing your changes with others](README.md#syncing-your-changes-with-others)
+
+---
 
 
 # here we go!
@@ -22,6 +28,7 @@ This is not meant to be a complete guide to git. Just some notes that I've gathe
 ## getting set up
 
 1. Download [`git`](https://git-scm.com) and install it.
+    * Some OSes/distros have `git` available through a package manager like `brew`, `apt`, or `pacman`. That will be the easiest option.
 1. Windows: open git bash (or any command prompt if you chose to install git system-wide) all other systems: open a terminal of your choice
 1. Make sure that the install worked correctly by typing `git --version`
 1. Configure git with your name and email address:

@@ -1,27 +1,26 @@
 # common git commands
 
-these are commands and options that i use frequently. see the linked documentation for more options and information.
+These are commands and options that I use frequently. See the linked documentation for more options and information.
 
 
 ## table of contents
-* [home](README.md)
-    * [getting set up](README.md#getting-set-up)
-    * [making your first repo](README.md#making-your-first-repo)
-    * [syncing your changes with others](README.md#syncing-your-changes-with-others)
-* [glossary](glossary.md)
-* **[common commands](common_commands.md)**
-* [branching strategies](branching_strategies.md)
-* [troubleshooting](troubleshooting.md)
-* [ssh setup](ssh_setup.md)
-* [external resources](README.md#external-resources.md)
-
+[home](README.md) &bull;
+[glossary](glossary.md) &bull;
+**[common commands](common_commands.md)** &bull;
+[branching strategies](branching_strategies.md) &bull;
+[troubleshooting](troubleshooting.md) &bull;
+[ssh setup](ssh_setup.md) &bull;
+[external resources](README.md#external-resources)
 
 ---
+
 
 ## [add](https://git-scm.com/docs/git-add)
 > `git add [--all] [<files>]`
 
 Add files from the working tree to the staging area. [`commit`](#commit) operates on the staging area.
+
+Try interactive staging: `git add -i`
 
 
 ## [branch](https://git-scm.com/docs/git-commit)
@@ -85,6 +84,8 @@ All commits since forking from master
 Visualize the history as a tree
 * `git log --pretty=oneline --graph --decorate --all`
 
+![pretty oneline](img/pretty-oneline.png)
+
 List changes specific to a certain file
 * `git log --follow -p -- <file_path>`
 
@@ -128,6 +129,6 @@ To sync with remote and overwrite local changes:
 ## [push](https://git-scm.com/docs/git-push)
 > `git push [-u] [<remote name>] [<branch name>]`
 
-The `-u` option will set the following branch and remote to the default upstream. This means you can simply do `git pull` without the refspec.
+The `-u` option will set the following branch and remote to the default upstream. This means you can simply do `git pull` without the [refspec](glossary.md#refspec).
 
 
