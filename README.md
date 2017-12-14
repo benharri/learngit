@@ -2,21 +2,21 @@
 
 This is a compilation of notes, tips and a getting started guide to [`git`](https://git-scm.com). Please feel free to open a pull request or fork it for yourself!
 
-## table of contents
+### table of contents
 **[home](README.md)** &bull;
 [glossary](glossary.md) &bull;
 [common commands](common_commands.md) &bull;
 [branching strategies](branching_strategies.md) &bull;
 [troubleshooting](troubleshooting.md) &bull;
-[ssh setup](ssh_setup.md) &bull;
-[external resources](README.md#external-resources)
+[ssh setup](ssh_setup.md)
 
 ---
 
-## on this page
+### on this page
 * [getting set up](README.md#getting-set-up)
 * [making your first repo](README.md#making-your-first-repo)
 * [syncing your changes with others](README.md#syncing-your-changes-with-others)
+* [external resources](README.md#external-resources)
 
 ---
 
