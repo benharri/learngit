@@ -1,15 +1,15 @@
 # troubleshooting
 
 ## table of contents
-* [home](README)
-    * [getting set up](README#getting-set-up)
-    * [making your first repo](README#making-your-first-repo)
-    * [syncing your changes with others](README#syncing-your-changes-with-others)
-* [glossary](glossary)
-* [common commands](common_commands)
-* [branching strategies](branching_strategies)
-* **[troubleshooting](troubleshooting)**
-* [ssh setup](ssh_setup)
-* [external resources](README#external-resources)
+* [home](README.md)
+    * [getting set up](README.md#getting-set-up)
+    * [making your first repo](README.md#making-your-first-repo)
+    * [syncing your changes with others](README.md#syncing-your-changes-with-others)
+* [glossary](glossary.md)
+* [common commands](common_commands.md)
+* [branching strategies](branching_strategies.md)
+* **[troubleshooting](troubleshooting.md)**
+* [ssh setup](ssh_setup.md)
+* [external resources](README.md#external-resources.md)
 
 wip

@@ -4,17 +4,16 @@ these are commands and options that i use frequently. see the linked documentati
 
 
 ## table of contents
-* [home](README)
-    * [getting set up](README#getting-set-up)
-    * [making your first repo](README#making-your-first-repo)
-    * [syncing your changes with others](README#syncing-your-changes-with-others)
-* [glossary](glossary)
-* **[common commands](common_commands)**
-* [branching strategies](branching_strategies)
-* [troubleshooting](troubleshooting)
-* [ssh setup](ssh_setup)
-* [external resources](README#external-resources)
-
+* [home](README.md)
+    * [getting set up](README.md#getting-set-up)
+    * [making your first repo](README.md#making-your-first-repo)
+    * [syncing your changes with others](README.md#syncing-your-changes-with-others)
+* [glossary](glossary.md)
+* **[common commands](common_commands.md)**
+* [branching strategies](branching_strategies.md)
+* [troubleshooting](troubleshooting.md)
+* [ssh setup](ssh_setup.md)
+* [external resources](README.md#external-resources.md)
 
 
 ---
@@ -121,6 +120,9 @@ See the documentation for more info on how to resolve merge conflicts.
 `pull` is a synonym for [`fetch`](#fetch) followed immediately by a [`merge`](#merge). It's a nice shortcut for that.
 
 Use the `--rebase` option when you haven't made any changes and want to get the latest changes that others have pushed to the remote.
+
+To sync with remote and overwrite local changes:
+> `git fetch origin && git reset --hard origin/master && git clean -f -d`
 
 
 ## [push](https://git-scm.com/docs/git-push)
