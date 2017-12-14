@@ -1,6 +1,6 @@
 # learngit
 
-this is a getting started guide to [`git`](https://git-scm.com).
+this is a compilation of notes and a getting started guide to [`git`](https://git-scm.com). please feel free to open a pull request or fork it for yourself!
 
 # table of contents
 
@@ -14,8 +14,6 @@ this is a getting started guide to [`git`](https://git-scm.com).
 * [troubleshooting](troubleshooting)
 * [ssh setup](ssh_setup)
 * [external resources](#external-resources)
-
-
 
 
 # here we go!
@@ -96,4 +94,14 @@ here are some more resources!
 * [github desktop](https://desktop.github.com) (an alternate GUI by github)
 
 
+---
 
+## contact me
+shoot me a message somewhere on the interwebz
+
+* [email](mailto:ben@tilde.team)
+* [my site](https://tilde.team/~ben/)
+* [twitter](https://twitter.com/nebsirrah)
+* [github](https://github.com/benharri)
+
+thanks for checking out my git guide!
