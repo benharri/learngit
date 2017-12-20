@@ -71,6 +71,8 @@ There are many ways to collaborate on a `git` repo. The simplest way to share a 
 
 Otherwise, there are dozens of git hosting options, the most popular of which is [github](https://github.com), which hosts the majority of all open source projects.
 
+Another cool option is [gitlab](https://gitlab.com). They offer unlimited private repos in addition to public ones.
+
 Let's take a look at syncing your repo with github (or any other git hosting location - just swap out the URLs).
 
 1. [Create the repo](https://github.com/new) (this assumes you're using GitHub)
