@@ -81,7 +81,7 @@ Let's take a look at syncing your repo with github (or any other git hosting loc
     * For an existing repo: `git remote add origin git@github.com:username/reponame` OR `git remote add origin https://github.com/username/reponame` depending on your [SSH key setup](ssh_setup)
     * If the repo doesn't exist yet, [`clone`](common_commands.md#clone) the repo like this: `git clone git@github.com:username/reponame`
     * A repo can have and use more than one remote. you can see the current remotes with this command: `git remote -v`
-1. Before you can sync you changes, there needs to be at least one commit in the repo (not a problem for pre-existing repos). Create one now if you haven't.
+1. Before you can sync your changes, there needs to be at least one commit in the repo (not a problem for pre-existing repos). Create one now if you haven't.
 1. Now you can [`push`](common_commands.md#push) your commit history to the remote repo! use this command: `git push origin --all` to push all branches and commits to the remote (assuming that the remote is named `origin`)
 
 To get changes that have other people have pushed the the repo while you were away, use the [`fetch`](common_commands.md#fetch) and [`merge`](common_commands.md#merge) commands. since this is such a common operation, [`pull`](common_commands.md#pull) was created as a shortcut for `git fetch` immediately followed by `git merge`.
@@ -116,7 +116,7 @@ Shoot me a message somewhere on the interwebz
 
 * [email](mailto:ben@tilde.team)
 * [my site](https://tilde.team/~ben/)
-* [twitter](https://twitter.com/nebsirrah)
 * [github](https://github.com/benharri)
+* irc (ben on [tilde.chat](https://tilde.chat/), benharri on [freenode](https://freenode.net/))
 
 Thanks for checking out my git guide!
