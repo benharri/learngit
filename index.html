@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
+        
+        
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>learngit</title>
+        <link href="css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/darcula.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="js/jquery-1.10.2.min.js" defer></script>
+        <script src="js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body class="homepage">
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href=".">learngit</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="active">
+                                <a href=".">learngit</a>
+                            </li>
+                            <li >
+                                <a href="branching_strategies/">branching strategies</a>
+                            </li>
+                            <li >
+                                <a href="common_commands/">common git commands</a>
+                            </li>
+                            <li >
+                                <a href="glossary/">git glossary</a>
+                            </li>
+                            <li >
+                                <a href="ssh_setup/">ssh key setup for git</a>
+                            </li>
+                            <li >
+                                <a href="troubleshooting/">troubleshooting</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="disabled">
+                                <a rel="next" >
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="branching_strategies/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#learngit">learngit</a></li>
+        <li class="main "><a href="#here-we-go">here we go!</a></li>
+            <li><a href="#getting-set-up">getting set up</a></li>
+            <li><a href="#making-your-first-repo">making your first repo</a></li>
+            <li><a href="#syncing-your-changes-with-others">syncing your changes with others</a></li>
+            <li><a href="#external-resources">external resources</a></li>
+            <li><a href="#contact-me">contact me</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="learngit">learngit</h1>
+<p>This is a compilation of notes, tips and a getting started guide to <a href="https://git-scm.com"><code>git</code></a>. Please feel free to open a pull request or fork it for yourself!</p>
+<hr />
+<h1 id="here-we-go">here we go!</h1>
+<p>This is not meant to be a complete guide to git. Just some notes that I've gathered over the years of using git that might be helpful to share with others.</p>
+<h2 id="getting-set-up">getting set up</h2>
+<ol>
+<li>Download <a href="https://git-scm.com"><code>git</code></a> and install it.<ul>
+<li>Some OSes/distros have <code>git</code> available through a package manager like <code>brew</code>, <code>apt</code>, or <code>pacman</code>. That will be the easiest option.</li>
+</ul>
+</li>
+<li>Windows: open git bash (or any command prompt if you chose to install git system-wide).
+    All other systems: open a terminal of your choice.</li>
+<li>Make sure that the install worked correctly by typing <code>git --version</code></li>
+<li>Configure git with your name and email address:<ul>
+<li><code>git config --global user.name "Your Name Here"</code></li>
+<li><code>git config --global user.email "name@domain.tld"</code></li>
+</ul>
+</li>
+</ol>
+<p>You're ready to <code>git</code> gud!</p>
+<p><img alt="git gud" src="img/gitgud.jpeg" /></p>
+<h2 id="making-your-first-repo">making your first repo</h2>
+<ol>
+<li>Create a new, empty folder (<a href="glossary/#directory">directory</a> in git and unix speak)<ul>
+<li>the command to make a new folder is <code>mkdir &lt;directory_name&gt;</code></li>
+</ul>
+</li>
+<li>Open or move to that folder in a command prompt that has git (look for git bash in the start menu if you're having trouble with this one)<ul>
+<li>the command to move between directories is <code>cd &lt;directory_name&gt;</code></li>
+</ul>
+</li>
+<li>Once you're in that directory, execute <code>git init</code>. this command creates a <code>.git</code> folder inside the current folder, which is where <code>git</code> stores all the information and history for the repo.</li>
+<li>Create and edit some files<ul>
+<li>for example: <code>echo "foo bar" &gt;&gt; foobar.txt</code></li>
+</ul>
+</li>
+<li>Check <code>git status</code> you should see something like this:
+    <img alt="status of new repo" src="img/new-repo-status.png" /><ul>
+<li>at this point, our <a href="glossary/#working-tree">working tree</a> is <a href="glossary/#dirty">"dirty"</a>, meaning that there are unsaved changes in the directory.</li>
+</ul>
+</li>
+<li>At this point, you need to add the changes to the <a href="glossary/#staging-area">staging area</a> with the <code>git add</code> command<ul>
+<li>you can add individual files by name (<code>git add foobar.txt</code>) or all changes to the working tree with the command option <code>--all</code></li>
+</ul>
+</li>
+<li>Once the files are staged, you are now ready to <a href="common_commands/#commit"><code>commit</code></a> the changes. every commit requires a message, which can be specified with the <code>-m</code> option. if you don't give a message with the <a href="common_commands/#commit"><code>commit</code></a> command, <code>git</code> will open your file editor and ask you to enter one.
+    <img alt="add and commit changes" src="img/add-and-commit.png" /></li>
+</ol>
+<p>Now you have a repo with one commit in it!</p>
+<h2 id="syncing-your-changes-with-others">syncing your changes with others</h2>
+<p>Now we get to have some real fun. The whole point of a distributed version control system is to allow many people to be working on the same code at once.</p>
+<p>There are many ways to collaborate on a <code>git</code> repo. The simplest way to share a repo is to use the <code>--bare</code> option with the <a href="common_commands/#init"><code>init</code></a> command.</p>
+<blockquote>
+<p>Bare repos are generally stored on a server that all users have SSH access to: once the repo is created on the server, each person can <a href="common_commands/#clone"><code>clone</code></a> a copy to their local machine like this: <code>git clone user@servername:path/to/repo</code></p>
+</blockquote>
+<p>Otherwise, there are dozens of git hosting options, the most popular of which is <a href="https://github.com">github</a>, which hosts the majority of all open source projects.</p>
+<p>Another cool option is <a href="https://gitlab.com">gitlab</a>. They offer unlimited private repos in addition to public ones.</p>
+<p>Let's take a look at syncing your repo with github (or any other git hosting location - just swap out the URLs).</p>
+<ol>
+<li><a href="https://github.com/new">Create the repo</a> (this assumes you're using GitHub)</li>
+<li>Set up the <a href="glossary/#remote"><code>remote</code></a>s<ul>
+<li>This depends on whether you have already created the repository locally. once you have created the repo on github, it will display some tips for which commands to use</li>
+<li>For an existing repo: <code>git remote add origin git@github.com:username/reponame</code> OR <code>git remote add origin https://github.com/username/reponame</code> depending on your <a href="ssh_setup">SSH key setup</a></li>
+<li>If the repo doesn't exist yet, <a href="common_commands/#clone"><code>clone</code></a> the repo like this: <code>git clone git@github.com:username/reponame</code></li>
+<li>A repo can have and use more than one remote. you can see the current remotes with this command: <code>git remote -v</code></li>
+</ul>
+</li>
+<li>Before you can sync your changes, there needs to be at least one commit in the repo (not a problem for pre-existing repos). Create one now if you haven't.</li>
+<li>Now you can <a href="common_commands/#push"><code>push</code></a> your commit history to the remote repo! use this command: <code>git push origin --all</code> to push all branches and commits to the remote (assuming that the remote is named <code>origin</code>)</li>
+</ol>
+<p>To get changes that have other people have pushed the the repo while you were away, use the <a href="common_commands/#fetch"><code>fetch</code></a> and <a href="common_commands/#merge"><code>merge</code></a> commands. since this is such a common operation, <a href="common_commands/#pull"><code>pull</code></a> was created as a shortcut for <code>git fetch</code> immediately followed by <code>git merge</code>.</p>
+<p>If you haven't made any changes since the last time you <code>pull</code>ed the latest changes, it's usually a good idea to <a href="common_commands/#pull"><code>rebase</code></a>. This will replay all of the work that has been done on top of the current repo state, avoiding extra merge commits in the repo history. Just use <code>git pull --rebase</code>.</p>
+<hr />
+<h2 id="external-resources">external resources</h2>
+<p>So you want to learn more?
+Here are some more resources!</p>
+<h3 id="articles-and-documentation">articles and documentation</h3>
+<ul>
+<li><a href="https://github.com/k88hudson/git-flight-rules">git flight rules</a></li>
+<li><a href="https://git-scm.com/book/en/v2">progit book</a></li>
+<li><a href="https://try.github.io">github interactive tutorial</a></li>
+<li><a href="https://www.learnenough.com/git-tutorial">learn enough git to be dangerous</a></li>
+<li><a href="https://www.atlassian.com/git/tutorials">atlassian git tutorials</a></li>
+<li><a href="https://help.github.com">github documentation</a></li>
+</ul>
+<h3 id="tools-and-apps">tools and apps</h3>
+<ul>
+<li><a href="https://sourcetreeapp.com">sourcetree app</a> (a visual GUI tool for working with git repos: great for people who don't feel quite at home on the command line)</li>
+<li><a href="https://desktop.github.com">github desktop</a> (an alternate GUI by github)</li>
+</ul>
+<hr />
+<h2 id="contact-me">contact me</h2>
+<p>Shoot me a message somewhere on the interwebz</p>
+<ul>
+<li><a href="mailto:ben@tilde.team">email</a></li>
+<li><a href="https://tilde.team/~ben/">my site</a></li>
+<li><a href="https://github.com/benharri">github</a></li>
+<li>irc (ben on <a href="https://tilde.chat/">tilde.chat</a>, benharri on <a href="https://freenode.net/">freenode</a>)</li>
+</ul>
+<p>Thanks for checking out my git guide!</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js" defer></script>
+        <script src="search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.0.4
+Build Date UTC : 2019-11-20 17:09:16
+-->
