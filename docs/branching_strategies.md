@@ -1,4 +1,4 @@
-# branching strategies
+# branching
 
 ---
 

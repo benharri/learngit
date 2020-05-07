@@ -1,4 +1,4 @@
-# common git commands
+# common commands
 
 These are commands and options that I use frequently. See the linked documentation for more options and information.
 

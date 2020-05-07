@@ -1,4 +1,4 @@
-# ssh key setup for git
+# ssh key setup
 
 ---
 

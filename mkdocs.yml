@@ -1,2 +1,7 @@
 site_name: learngit
 theme: cyborg
+repo_url: https://github.com/benharri/learngit
+edit_uri: blob/master/docs/
+markdown_extensions:
+    - toc:
+        permalink: True

@@ -1,4 +1,4 @@
-# git glossary
+# glossary
 
 > [source (git-scm.com)](https://git-scm.com/book/en/v2) (unless otherwise noted)
 
