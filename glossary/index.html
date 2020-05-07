@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>git glossary - learngit</title>
+        <title>glossary - learngit</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -50,19 +50,16 @@
                                 <a href="..">learngit</a>
                             </li>
                             <li >
-                                <a href="../branching_strategies/">branching strategies</a>
+                                <a href="../branching_strategies/">branching</a>
                             </li>
                             <li >
-                                <a href="../common_commands/">common git commands</a>
+                                <a href="../common_commands/">common commands</a>
                             </li>
                             <li class="active">
-                                <a href="./">git glossary</a>
+                                <a href="./">glossary</a>
                             </li>
                             <li >
-                                <a href="../ssh_setup/">ssh key setup for git</a>
-                            </li>
-                            <li >
-                                <a href="../troubleshooting/">troubleshooting</a>
+                                <a href="../ssh_setup/">ssh key setup</a>
                             </li>
                         </ul>
 
@@ -82,6 +79,9 @@
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
+                            <li>
+                                <a href="https://github.com/benharri/learngit/blob/master/docs/glossary.md"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
                     </ul>
                 </div>
             </div>
@@ -90,7 +90,7 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#git-glossary">git glossary</a></li>
+        <li class="main active"><a href="#glossary">glossary</a></li>
             <li><a href="#branch">branch</a></li>
             <li><a href="#checkout">checkout</a></li>
             <li><a href="#commit">commit</a></li>
@@ -111,42 +111,42 @@
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="git-glossary">git glossary</h1>
+<h1 id="glossary">glossary<a class="headerlink" href="#glossary" title="Permanent link">&para;</a></h1>
 <blockquote>
 <p><a href="https://git-scm.com/book/en/v2">source (git-scm.com)</a> (unless otherwise noted)</p>
 </blockquote>
 <hr />
-<h2 id="branch"><a href="https://git-scm.com/book/en/v1/Git-Branching-What-a-Branch-Is">branch</a></h2>
+<h2 id="branch"><a href="https://git-scm.com/book/en/v1/Git-Branching-What-a-Branch-Is">branch</a><a class="headerlink" href="#branch" title="Permanent link">&para;</a></h2>
 <p>To really understand the way Git does branching, we need to take a step back and examine how Git stores its data. As you may remember from Chapter 1, Git doesn’t store data as a series of changesets or deltas, but instead as a series of snapshots.</p>
 <p>Running <a href="../common_commands/#commit"><code>git commit</code></a> checksums all project directories and stores them as tree objects in the Git repository. Git then creates a commit object that has the metadata and a pointer to the root project tree object so it can re-create that snapshot when needed.</p>
 <p>A branch in Git is simply a lightweight movable pointer to one of these commits. The default branch name in Git is master. As you initially make commits, you’re given a master branch that points to the last commit you made. Every time you commit, it moves forward automatically.</p>
-<h2 id="checkout"><a href="../common_commands/#checkout">checkout</a></h2>
+<h2 id="checkout"><a href="../common_commands/#checkout">checkout</a><a class="headerlink" href="#checkout" title="Permanent link">&para;</a></h2>
 <p>Checking out is the operation of switching the working tree to the state at a given snapshot, which is usually the HEAD of another branch.</p>
-<h2 id="commit">commit</h2>
+<h2 id="commit">commit<a class="headerlink" href="#commit" title="Permanent link">&para;</a></h2>
 <p>A commit is a snapshot of all tracked files in the repo.</p>
-<h2 id="directory">directory</h2>
+<h2 id="directory">directory<a class="headerlink" href="#directory" title="Permanent link">&para;</a></h2>
 <p>Also known as a folder.</p>
-<h2 id="dirty">dirty</h2>
+<h2 id="dirty">dirty<a class="headerlink" href="#dirty" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p><a href="https://stackoverflow.com/questions/20642980/does-git-dirty-mean-files-not-staged-or-not-committed-glossary-conflict">source</a></p>
 </blockquote>
 <p>The "right" definition is, I think, that your tree is "clean" if there are no changes to commit and no changes between "tree staged for commit" (contents of index) and "work directory". However, it's reasonable to ask separately whether the index is clean (i.e., there is nothing staged for commit) and/or the work-tree is clean (unchanged) with respect to "the staging area" or "the HEAD commit".</p>
-<h2 id="distributed-version-control-system">distributed version control system</h2>
+<h2 id="distributed-version-control-system">distributed version control system<a class="headerlink" href="#distributed-version-control-system" title="Permanent link">&para;</a></h2>
 <p>A Distributed Version Control System (DVCS) differs from traditional VCS systems in that every user has a copy of the entire repo, including the history and all branches.</p>
 <p>A connection to a central server is not required to work on a project. Changes and conflicts can be resolved later when the diverging histories are <a href="../common_commands/#merge"><code>merge</code></a>d later on.</p>
-<h2 id="gitignore"><a href="https://git-scm.com/docs/gitignore">gitignore</a></h2>
+<h2 id="gitignore"><a href="https://git-scm.com/docs/gitignore">gitignore</a><a class="headerlink" href="#gitignore" title="Permanent link">&para;</a></h2>
 <p>Specifies intentionally untracked files to ignore.</p>
 <p>A <code>.gitignore</code> file in the root of the repository contains a list of patterns that should not be tracked.</p>
 <p>See the documentation for more information on ignore patterns.</p>
 <p>Tracked files that you would like to ignore can be deleted with <code>git rm --cached .</code> and then re-added with <code>git add .</code></p>
-<h2 id="hash"><a href="https://git-scm.com/docs/gitglossary#def_SHA1">hash</a></h2>
+<h2 id="hash"><a href="https://git-scm.com/docs/gitglossary#def_SHA1">hash</a><a class="headerlink" href="#hash" title="Permanent link">&para;</a></h2>
 <p>The unique identifier of an object. The object name is usually represented by a 40 character hexadecimal string. Also colloquially called SHA-1.</p>
-<h2 id="master">master</h2>
+<h2 id="master">master<a class="headerlink" href="#master" title="Permanent link">&para;</a></h2>
 <p>Master is the name given to the default branch of a repository.</p>
 <p>Whenever you create a Git repository, a branch named "master" is created, and becomes the active branch. In most cases, this contains the local development, though that is purely by convention and is not required.</p>
-<h2 id="origin">origin</h2>
+<h2 id="origin">origin<a class="headerlink" href="#origin" title="Permanent link">&para;</a></h2>
 <p>Origin is the name given to the default remote. It is set automatically when using <a href="../common_commands/#clone"><code>git clone</code></a>, and recommended when setting up the remote for an existing repo.</p>
-<h2 id="pathspec"><a href="https://git-scm.com/docs/gitglossary#gitglossary-aiddefpathspecapathspec">pathspec</a></h2>
+<h2 id="pathspec"><a href="https://git-scm.com/docs/gitglossary#gitglossary-aiddefpathspecapathspec">pathspec</a><a class="headerlink" href="#pathspec" title="Permanent link">&para;</a></h2>
 <p>Pattern used to limit paths in Git commands.</p>
 <p>Pathspecs are used on the command line of <code>git ls-files</code>, <code>git ls-tree</code>, <code>git add</code>, <code>git grep</code>, <code>git diff</code>, <code>git checkout</code>, and many other commands to limit the scope of operations to some subset of the tree or worktree. See the documentation of each command for whether paths are relative to the current directory or toplevel. The pathspec syntax is as follows:</p>
 <ul>
@@ -164,18 +164,18 @@
 <p>A pathspec that begins with a colon : has special meaning. In the short form, the leading colon : is followed by zero or more "magic signature" letters (which optionally is terminated by another colon :), and the remainder is the pattern to match against the path. The "magic signature" consists of ASCII symbols that are neither alphanumeric, glob, regex special characters nor colon. The optional colon that terminates the "magic signature" can be omitted if the pattern begins with a character that does not belong to "magic signature" symbol set and is not a colon.</p>
 <p>In the long form, the leading colon : is followed by a open parenthesis (, a comma-separated list of zero or more "magic words", and a close parentheses ), and the remainder is the pattern to match against the path.</p>
 <p>A pathspec with only a colon means "there is no pathspec". This form should not be combined with other pathspec.</p>
-<h2 id="refspec"><a href="https://git-scm.com/docs/gitglossary#gitglossary-aiddefrefaref">refspec</a></h2>
+<h2 id="refspec"><a href="https://git-scm.com/docs/gitglossary#gitglossary-aiddefrefaref">refspec</a><a class="headerlink" href="#refspec" title="Permanent link">&para;</a></h2>
 <p>A name that begins with refs/ (e.g. refs/heads/master) that points to an object name or another ref (the latter is called a symbolic ref). For convenience, a ref can sometimes be abbreviated when used as an argument to a Git command; see gitrevisions[7] for details. Refs are stored in the repository.</p>
 <p>The ref namespace is hierarchical. Different subhierarchies are used for different purposes (e.g. the refs/heads/ hierarchy is used to represent local branches).</p>
 <p>There are a few special-purpose refs that do not begin with refs/. The most notable example is HEAD.</p>
-<h2 id="remote"><a href="https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes">remote</a></h2>
+<h2 id="remote"><a href="https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes">remote</a><a class="headerlink" href="#remote" title="Permanent link">&para;</a></h2>
 <p>Remote repositories are versions of your project that are hosted on the Internet or network somewhere. You can have several of them, each of which generally is either read-only or read/write for you. Collaborating with others involves managing these remote repositories and pushing and pulling data to and from them when you need to share work.</p>
-<h2 id="repository"><a href="https://git-scm.com/docs/gitglossary#def_repository">repository</a></h2>
+<h2 id="repository"><a href="https://git-scm.com/docs/gitglossary#def_repository">repository</a><a class="headerlink" href="#repository" title="Permanent link">&para;</a></h2>
 <p>A collection of refs together with an object database containing all objects which are reachable from the refs, possibly accompanied by meta data from one or more porcelains. A repository can share an object database with other repositories via alternates mechanism.</p>
-<h2 id="staging-area"><a href="https://softwareengineering.stackexchange.com/questions/119782/what-does-stage-mean-in-git">staging area</a></h2>
+<h2 id="staging-area"><a href="https://softwareengineering.stackexchange.com/questions/119782/what-does-stage-mean-in-git">staging area</a><a class="headerlink" href="#staging-area" title="Permanent link">&para;</a></h2>
 <p>source: <a href="https://softwareengineering.stackexchange.com/questions/119782/what-does-stage-mean-in-git">stack exchange</a></p>
 <p>To stage a file is simply to prepare it finely for a commit. Git, with its index allows you to commit only certain parts of the changes you've done since the last commit. Say you're working on two features - one is finished, and one still needs some work done. You'd like to make a commit and go home (5 o'clock, finally!) but wouldn't like to commit the parts of the second feature, which is not done yet. You stage the parts you know belong to the first feature, and commit. Now your commit is your project with the first feature done, while the second is still in work-in-progress in your working directory.</p>
-<h2 id="working-tree"><a href="https://git-scm.com/docs/gitglossary#gitglossary-aiddefworkingtreeaworkingtree">working tree</a></h2>
+<h2 id="working-tree"><a href="https://git-scm.com/docs/gitglossary#gitglossary-aiddefworkingtreeaworkingtree">working tree</a><a class="headerlink" href="#working-tree" title="Permanent link">&para;</a></h2>
 <p>The tree of actual checked out files. The working tree normally contains the contents of the HEAD commit’s tree, plus any local changes that you have made but not yet committed.</p></div>
         </div>
 

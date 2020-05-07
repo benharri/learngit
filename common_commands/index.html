@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>common git commands - learngit</title>
+        <title>common commands - learngit</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -50,19 +50,16 @@
                                 <a href="..">learngit</a>
                             </li>
                             <li >
-                                <a href="../branching_strategies/">branching strategies</a>
+                                <a href="../branching_strategies/">branching</a>
                             </li>
                             <li class="active">
-                                <a href="./">common git commands</a>
+                                <a href="./">common commands</a>
                             </li>
                             <li >
-                                <a href="../glossary/">git glossary</a>
+                                <a href="../glossary/">glossary</a>
                             </li>
                             <li >
-                                <a href="../ssh_setup/">ssh key setup for git</a>
-                            </li>
-                            <li >
-                                <a href="../troubleshooting/">troubleshooting</a>
+                                <a href="../ssh_setup/">ssh key setup</a>
                             </li>
                         </ul>
 
@@ -82,6 +79,9 @@
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
+                            <li>
+                                <a href="https://github.com/benharri/learngit/blob/master/docs/common_commands.md"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
                     </ul>
                 </div>
             </div>
@@ -90,7 +90,7 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#common-git-commands">common git commands</a></li>
+        <li class="main active"><a href="#common-commands">common commands</a></li>
             <li><a href="#add">add</a></li>
             <li><a href="#branch">branch</a></li>
             <li><a href="#checkout">checkout</a></li>
@@ -107,54 +107,54 @@
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="common-git-commands">common git commands</h1>
+<h1 id="common-commands">common commands<a class="headerlink" href="#common-commands" title="Permanent link">&para;</a></h1>
 <p>These are commands and options that I use frequently. See the linked documentation for more options and information.</p>
 <hr />
-<h2 id="add"><a href="https://git-scm.com/docs/git-add">add</a></h2>
+<h2 id="add"><a href="https://git-scm.com/docs/git-add">add</a><a class="headerlink" href="#add" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p><code>git add [--all] [&lt;files&gt;]</code></p>
 </blockquote>
 <p>Add files from the working tree to the staging area. <a href="#commit"><code>commit</code></a> operates on the staging area.</p>
 <p>Try interactive staging: <code>git add -i</code></p>
-<h2 id="branch"><a href="https://git-scm.com/docs/git-commit">branch</a></h2>
+<h2 id="branch"><a href="https://git-scm.com/docs/git-commit">branch</a><a class="headerlink" href="#branch" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p><code>git branch [&lt;branch&gt;]</code></p>
 </blockquote>
 <p>Show branches and create new ones.</p>
-<h2 id="checkout"><a href="https://git-scm.com/docs/git-checkout">checkout</a></h2>
+<h2 id="checkout"><a href="https://git-scm.com/docs/git-checkout">checkout</a><a class="headerlink" href="#checkout" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p><code>git checkout [&lt;branch&gt;]</code></p>
 </blockquote>
 <p>Switch branches or restore working tree files.</p>
 <p>The <code>-b</code> switch creates the branch if it doesn't exist and switches to it.</p>
-<h2 id="clone"><a href="https://git-scm.com/docs/git-clone">clone</a></h2>
+<h2 id="clone"><a href="https://git-scm.com/docs/git-clone">clone</a><a class="headerlink" href="#clone" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p><code>git clone [&lt;remote_url&gt;] [directory_to_clone_into]</code></p>
 </blockquote>
 <p>Download a copy of a remote repository from a server.</p>
-<h2 id="commit"><a href="https://git-scm.com/docs/git-commit">commit</a></h2>
+<h2 id="commit"><a href="https://git-scm.com/docs/git-commit">commit</a><a class="headerlink" href="#commit" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p><code>git commit [-a] [-m "commit message here"]</code></p>
 </blockquote>
 <p>Create a snapshot of the staging area. Record staged changes.</p>
 <p>The <code>-a</code> switch will add all modified and deleted files (will not pick up new files that have been added to the repo) to the staging area before committing.</p>
-<h2 id="diff"><a href="https://git-scm.com/docs/git-diff">diff</a></h2>
+<h2 id="diff"><a href="https://git-scm.com/docs/git-diff">diff</a><a class="headerlink" href="#diff" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p><code>git diff [&lt;from_path-spec&gt;]..[&lt;to_path-spec&gt;]</code></p>
 </blockquote>
 <p>Show changes by line. With no arguments, <code>diff</code> shows all unstaged changes.</p>
 <p>Other uses would be comparing changes between branches or between a range of commits (referred to by their hashes, which you can see with <a href="#log"><code>log</code></a>).</p>
-<h2 id="fetch"><a href="https://git-scm.com/docs/git-fetch">fetch</a></h2>
+<h2 id="fetch"><a href="https://git-scm.com/docs/git-fetch">fetch</a><a class="headerlink" href="#fetch" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p><code>git fetch [&lt;repository&gt; [&lt;refspec&gt;]]</code></p>
 </blockquote>
 <p>Download objects and refs from another (usually remote) repository.</p>
-<h2 id="init"><a href="https://git-scm.com/docs/git-init">init</a></h2>
+<h2 id="init"><a href="https://git-scm.com/docs/git-init">init</a><a class="headerlink" href="#init" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p><code>git init [--bare] [--shared] [&lt;directory&gt;]</code></p>
 </blockquote>
 <p>Create an empty repo or reinitialize an existing one.</p>
-<h2 id="log"><a href="https://git-scm.com/docs/git-log">log</a></h2>
+<h2 id="log"><a href="https://git-scm.com/docs/git-log">log</a><a class="headerlink" href="#log" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p><code>git log [&lt;revision range&gt;]</code></p>
 </blockquote>
@@ -167,7 +167,7 @@
 <p><img alt="pretty oneline" src="../img/pretty-oneline.png" /></p>
 <p>List changes specific to a certain file
 * <code>git log --follow -p -- &lt;file_path&gt;</code></p>
-<h2 id="merge"><a href="https://git-scm.com/docs/git-merge">merge</a></h2>
+<h2 id="merge"><a href="https://git-scm.com/docs/git-merge">merge</a><a class="headerlink" href="#merge" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p><code>git merge [&lt;branch&gt;]</code></p>
 </blockquote>
@@ -189,7 +189,7 @@ And here is another line that is cleanly resolved or unmodified.
 <li>This is what you will see as the result of a merge conflict. Simply keep the lines you would like, remove the conflict markers, and commit the result.</li>
 </ul>
 <p>See the documentation for more info on how to resolve merge conflicts.</p>
-<h2 id="pull"><a href="https://git-scm.com/docs/git-pull">pull</a></h2>
+<h2 id="pull"><a href="https://git-scm.com/docs/git-pull">pull</a><a class="headerlink" href="#pull" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p><code>git pull [--rebase] [--ff] [--no-ff] [&lt;remote name&gt;] [&lt;branch name&gt;]</code></p>
 </blockquote>
@@ -199,7 +199,7 @@ And here is another line that is cleanly resolved or unmodified.
 <blockquote>
 <p><code>git fetch origin &amp;&amp; git reset --hard origin/master &amp;&amp; git clean -f -d</code></p>
 </blockquote>
-<h2 id="push"><a href="https://git-scm.com/docs/git-push">push</a></h2>
+<h2 id="push"><a href="https://git-scm.com/docs/git-push">push</a><a class="headerlink" href="#push" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p><code>git push [-u] [&lt;remote name&gt;] [&lt;branch name&gt;]</code></p>
 </blockquote>

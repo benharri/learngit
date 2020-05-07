@@ -50,19 +50,16 @@
                                 <a href=".">learngit</a>
                             </li>
                             <li >
-                                <a href="branching_strategies/">branching strategies</a>
+                                <a href="branching_strategies/">branching</a>
                             </li>
                             <li >
-                                <a href="common_commands/">common git commands</a>
+                                <a href="common_commands/">common commands</a>
                             </li>
                             <li >
-                                <a href="glossary/">git glossary</a>
+                                <a href="glossary/">glossary</a>
                             </li>
                             <li >
-                                <a href="ssh_setup/">ssh key setup for git</a>
-                            </li>
-                            <li >
-                                <a href="troubleshooting/">troubleshooting</a>
+                                <a href="ssh_setup/">ssh key setup</a>
                             </li>
                         </ul>
 
@@ -81,6 +78,9 @@
                                 <a rel="prev" href="branching_strategies/">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/benharri/learngit/blob/master/docs/index.md"><i class="fa fa-github"></i> Edit on GitHub</a>
                             </li>
                     </ul>
                 </div>
@@ -101,12 +101,12 @@
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="learngit">learngit</h1>
+<h1 id="learngit">learngit<a class="headerlink" href="#learngit" title="Permanent link">&para;</a></h1>
 <p>This is a compilation of notes, tips and a getting started guide to <a href="https://git-scm.com"><code>git</code></a>. Please feel free to open a pull request or fork it for yourself!</p>
 <hr />
-<h1 id="here-we-go">here we go!</h1>
+<h1 id="here-we-go">here we go!<a class="headerlink" href="#here-we-go" title="Permanent link">&para;</a></h1>
 <p>This is not meant to be a complete guide to git. Just some notes that I've gathered over the years of using git that might be helpful to share with others.</p>
-<h2 id="getting-set-up">getting set up</h2>
+<h2 id="getting-set-up">getting set up<a class="headerlink" href="#getting-set-up" title="Permanent link">&para;</a></h2>
 <ol>
 <li>Download <a href="https://git-scm.com"><code>git</code></a> and install it.<ul>
 <li>Some OSes/distros have <code>git</code> available through a package manager like <code>brew</code>, <code>apt</code>, or <code>pacman</code>. That will be the easiest option.</li>
@@ -123,7 +123,7 @@
 </ol>
 <p>You're ready to <code>git</code> gud!</p>
 <p><img alt="git gud" src="img/gitgud.jpeg" /></p>
-<h2 id="making-your-first-repo">making your first repo</h2>
+<h2 id="making-your-first-repo">making your first repo<a class="headerlink" href="#making-your-first-repo" title="Permanent link">&para;</a></h2>
 <ol>
 <li>Create a new, empty folder (<a href="glossary/#directory">directory</a> in git and unix speak)<ul>
 <li>the command to make a new folder is <code>mkdir &lt;directory_name&gt;</code></li>
@@ -151,7 +151,7 @@
     <img alt="add and commit changes" src="img/add-and-commit.png" /></li>
 </ol>
 <p>Now you have a repo with one commit in it!</p>
-<h2 id="syncing-your-changes-with-others">syncing your changes with others</h2>
+<h2 id="syncing-your-changes-with-others">syncing your changes with others<a class="headerlink" href="#syncing-your-changes-with-others" title="Permanent link">&para;</a></h2>
 <p>Now we get to have some real fun. The whole point of a distributed version control system is to allow many people to be working on the same code at once.</p>
 <p>There are many ways to collaborate on a <code>git</code> repo. The simplest way to share a repo is to use the <code>--bare</code> option with the <a href="common_commands/#init"><code>init</code></a> command.</p>
 <blockquote>
@@ -175,10 +175,10 @@
 <p>To get changes that have other people have pushed the the repo while you were away, use the <a href="common_commands/#fetch"><code>fetch</code></a> and <a href="common_commands/#merge"><code>merge</code></a> commands. since this is such a common operation, <a href="common_commands/#pull"><code>pull</code></a> was created as a shortcut for <code>git fetch</code> immediately followed by <code>git merge</code>.</p>
 <p>If you haven't made any changes since the last time you <code>pull</code>ed the latest changes, it's usually a good idea to <a href="common_commands/#pull"><code>rebase</code></a>. This will replay all of the work that has been done on top of the current repo state, avoiding extra merge commits in the repo history. Just use <code>git pull --rebase</code>.</p>
 <hr />
-<h2 id="external-resources">external resources</h2>
+<h2 id="external-resources">external resources<a class="headerlink" href="#external-resources" title="Permanent link">&para;</a></h2>
 <p>So you want to learn more?
 Here are some more resources!</p>
-<h3 id="articles-and-documentation">articles and documentation</h3>
+<h3 id="articles-and-documentation">articles and documentation<a class="headerlink" href="#articles-and-documentation" title="Permanent link">&para;</a></h3>
 <ul>
 <li><a href="https://github.com/k88hudson/git-flight-rules">git flight rules</a></li>
 <li><a href="https://git-scm.com/book/en/v2">progit book</a></li>
@@ -187,13 +187,13 @@ Here are some more resources!</p>
 <li><a href="https://www.atlassian.com/git/tutorials">atlassian git tutorials</a></li>
 <li><a href="https://help.github.com">github documentation</a></li>
 </ul>
-<h3 id="tools-and-apps">tools and apps</h3>
+<h3 id="tools-and-apps">tools and apps<a class="headerlink" href="#tools-and-apps" title="Permanent link">&para;</a></h3>
 <ul>
 <li><a href="https://sourcetreeapp.com">sourcetree app</a> (a visual GUI tool for working with git repos: great for people who don't feel quite at home on the command line)</li>
 <li><a href="https://desktop.github.com">github desktop</a> (an alternate GUI by github)</li>
 </ul>
 <hr />
-<h2 id="contact-me">contact me</h2>
+<h2 id="contact-me">contact me<a class="headerlink" href="#contact-me" title="Permanent link">&para;</a></h2>
 <p>Shoot me a message somewhere on the interwebz</p>
 <ul>
 <li><a href="mailto:ben@tilde.team">email</a></li>
@@ -284,5 +284,5 @@ Here are some more resources!</p>
 
 <!--
 MkDocs version : 1.0.4
-Build Date UTC : 2019-11-20 17:16:14
+Build Date UTC : 2020-05-07 19:16:37
 -->
