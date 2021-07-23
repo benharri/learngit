@@ -100,6 +100,6 @@ Shoot me a message somewhere on the interwebz
 * [email](mailto:ben@tilde.team)
 * [my site](https://tilde.team/~ben/)
 * [github](https://github.com/benharri)
-* irc (ben on [tilde.chat](https://tilde.chat/), benharri on [freenode](https://freenode.net/))
+* irc (`ben` on [tilde.chat](https://tilde.chat/) and [libera.chat](https://libera.chat/))
 
 Thanks for checking out my git guide!
